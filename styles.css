@@ -1,0 +1,76 @@
+/* fonts of the website 
+-----------------
+font1: Archivo
+font2: Open Sans 
+-----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* hero-section view */
+.hero-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    justify-content: center;
+    background-color: black;
+    margin: 50px 100px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    padding: 100px;
+    padding-bottom: 0px;
+}
+/* herosection Title */
+.hero-title{
+    font-family: 'Archivo', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+/* Hero section image */
+.hero-image img{
+    width: 100%;
+    margin-bottom: -4px;
+}
+/* Hero section regular text */
+.hero-regular{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Hero section button */
+.hero-button{
+    background-color: #DD0000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+/* Space for Icon */
+.fa-solid{
+    padding-left: 10px;
+}
+
+/* ===================================================
+Second Live section
+========================================== */
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 100px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    padding: 100px;
+    padding-bottom: 0px;
+}
+.main-live{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
