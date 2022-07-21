@@ -65,45 +65,43 @@ Second Live section
 
 /* Top of the section */
 .container2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
+    display: flex;
+    column-gap: 20px;
     margin: 50px 100px;
 }
 
 /* Three button */
 .multiple-button{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
     align-items: center;
     background-color: black;
     border-radius: 10px;
-    width: 312px;
-    height: 312px;
+    width: 280px;
+    height: 200px;
     text-align: center;
+    padding: 15px;
 
 }
 
 /* Buton directly */
 .direct-buttons{
+    display: block;
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
     background-color: #ffffff;
-    padding: 17px 39px;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding: 15px 22px;
+    
 
 }
- /* Button number 2 */
-.button2{
-    padding: 17px 79px;
-}
 
-/* button number 3 */
+/* Blog button for change color */
 .button3{
-    padding: 17px 103px;
     background-color: #DD0000;
     color: white;
 }
@@ -112,20 +110,14 @@ Second Live section
 .main-live{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 20px;
+    gap: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Video live section separatly */
-.child-live{
-    width: 312px;
-    height: 362px;
-}
 
 /* image of live sections  */
-.main-live img{
-    width: 312px;
-    height: 175px;
+.live-images{
+    width: 100%;
     padding-bottom: 20px;
 }
 .child-live a{
@@ -144,6 +136,17 @@ Second Live section
     font-weight: 600;
     padding-top: 20px;
 }
+
+.parent-icon-texts{
+    display: flex;
+    align-items: center;
+
+}
+.parent-icon-texts img,span{
+    margin-right: 10px;
+}
+
+
 
 
 /* ==============================================
@@ -175,4 +178,200 @@ Footer Section
     grid-template-columns: repeat(6,1fr);
     font-family: 'Open Sans', sans-serif;
     padding-top: 20px;
+}
+
+/* ================================================================================================================================================================================================================================================================================================
+Responsive website for mobile
+========================================= */
+@media (max-width: 770px){
+
+    /* hero-section view */
+    .hero-section{
+        padding: 30px 40px;
+        margin: 30px;
+        display: block;
+        text-align: center;
+    }
+
+
+    /* herosection Title */
+.hero-title{
+    font-family: 'Archivo', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+/* Hero section image */
+.hero-image img{
+    margin-top: 40px;
+    margin-bottom: -34px;
+    width: 100%;
+}
+/* Hero section regular text */
+.hero-regular{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 14px;
+}
+/* Hero section button */
+.hero-button{
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+/* ===================================================
+Second Live section
+========================================== */
+
+
+/* Top of the section */
+.container2{
+    display: block;
+    margin: 30px;
+}
+
+/* Three button */
+.multiple-button{
+    background-color: white;
+
+}
+
+/* Buton directly */
+.direct-buttons{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 12px 10px;
+}
+
+/* Video live section  */
+.main-live{
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+/* ==============================================
+Footer Section
+=============================================== */
+
+/* footer tags  */
+.six-tags{
+    display: block;
+
+}
+}
+
+
+/* ----------------------------------- Resposive for Tab
+================================================================ */
+
+@media (min-width: 770px) and (max-width: 992px){
+
+
+/* hero-section view */
+    .hero-section{
+        padding: 30px 40px;
+        margin: 30px;
+        display: block;
+        text-align: center;
+    }
+
+
+/* herosection Title */
+.hero-title{
+    font-family: 'Archivo', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+/* Hero section image */
+.hero-image img{
+    width: 100%;
+    margin-bottom: -4px;
+}
+/* Hero section regular text */
+.hero-regular{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Hero section button */
+.hero-button{
+    background-color: #DD0000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+/* Space for Icon */
+.fa-solid{
+    padding-left: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ++++++++++++++++++++++++++++++
+For next page (upcoming) 
+++++++++++++++++++++++++++++++++++*/
+
+/* upcoming match section */
+.flag-live{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+/* separate section of upcoming match */
+.sec-child{
+    align-self: center;
+    border: 1px solid rgba(128, 128, 128, 0.445);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* double flag image */
+.sub-sec-child{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* flag images separately */
+.sub-sec-child img{
+    width: 100%;
+}
+
+/* Flag text number one */
+.reg1-flag{
+    padding-top: 10px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Flag text number two */
+.reg2-flag{
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
