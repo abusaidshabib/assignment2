@@ -61,16 +61,118 @@ font2: Open Sans
 /* ===================================================
 Second Live section
 ========================================== */
+
+
+/* Top of the section */
 .container2{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
     margin: 50px 100px;
-    margin-bottom: 0px;
-    border-radius: 20px;
-    padding: 100px;
-    padding-bottom: 0px;
 }
+
+/* Three button */
+.multiple-button{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    width: 312px;
+    height: 312px;
+    text-align: center;
+
+}
+
+/* Buton directly */
+.direct-buttons{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    padding: 17px 39px;
+    border-radius: 10px;
+
+}
+ /* Button number 2 */
+.button2{
+    padding: 17px 79px;
+}
+
+/* button number 3 */
+.button3{
+    padding: 17px 103px;
+    background-color: #DD0000;
+    color: white;
+}
+
+/* Video live section  */
 .main-live{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Video live section separatly */
+.child-live{
+    width: 312px;
+    height: 362px;
+}
+
+/* image of live sections  */
+.main-live img{
+    width: 312px;
+    height: 175px;
+    padding-bottom: 20px;
+}
+.child-live a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid black;
+    padding: 4px 16px;
+    border-radius: 5px;
+    color: black;
+}
+.child-live p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+
+/* ==============================================
+Footer Section
+=============================================== */
+/* Main section of footer  */
+.main-footer{
+    background-color: #161616;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 100px;
+}
+
+/* Footer section title  */
+.footer-title{
+    font-size: 40px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.footer-hr{
+    size: .5px;
+}
+
+/* footer tags  */
+.six-tags{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
 }
