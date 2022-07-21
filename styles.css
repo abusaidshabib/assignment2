@@ -238,6 +238,12 @@ For next page of (upcomming)
     font-weight: 400;
 }
 
+.view-button{
+    display: none;
+}
+
+
+
 /* ================================================================================================================================================================================================================================================================================================
 Responsive website for mobile
 ========================================= */
@@ -325,17 +331,6 @@ Footer Section
     }
 
 /* ======================= View All buttons==================== */
-.view-button{
-    background-color: #014b01;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    padding: 15px 25px;
-    border-radius: 10px;
-}
-
 
 
 
@@ -355,7 +350,6 @@ For next page of (upcomming)
     .sub-sec-child{
         justify-content: center;
     }
-
 }
 
 
@@ -439,4 +433,20 @@ For next page of (upcomming)
     .sub-sec-child{
         justify-content: center;
     }
+
+    /* view-button last */
+    .view-button{
+        display: block;
+        margin: 20px 300px;
+        text-align: center;
+        background-color: #014b01;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+        padding: 15px 25px;
+        border-radius: 10px;
+    }
+    
 }
