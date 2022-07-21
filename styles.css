@@ -44,7 +44,7 @@ font2: Open Sans
 }
 /* Hero section button */
 .hero-button{
-    background-color: #DD0000;
+    background-color: #014b01;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -102,7 +102,7 @@ Second Live section
 
 /* Blog button for change color */
 .button3{
-    background-color: #DD0000;
+    background-color: #014b01;
     color: white;
 }
 
@@ -178,6 +178,64 @@ Footer Section
     grid-template-columns: repeat(6,1fr);
     font-family: 'Open Sans', sans-serif;
     padding-top: 20px;
+}
+
+
+/* -----------------------------------------------------------
+For next page of (upcomming)
+-----------------------------------------------------------
+*/
+
+/* For multiple section with text */
+.flag-live{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    text-align: center;
+
+}
+
+/* single section of live */
+.sec-child{
+    border: 1px solid rgba(128, 128, 128, 0.514);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* For single section */
+.sub-sec-child{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+/* For text between flgs */
+.sub-sec-child span{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* images all */
+.sec-child img{
+    width: 100%;
+}
+
+/* flag seciton first text */
+.reg1-flag{
+    padding-top: 10px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* flag section second text */
+.reg2-flag{
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* ================================================================================================================================================================================================================================================================================================
@@ -259,47 +317,16 @@ Footer Section
     display: block;
 
 }
-}
 
-
-/* ----------------------------------- Resposive for Tab
-================================================================ */
-
-@media (min-width: 770px) and (max-width: 992px){
-
-
-/* hero-section view */
-    .hero-section{
-        padding: 30px 40px;
-        margin: 30px;
-        display: block;
-        text-align: center;
+    /* For multiple section with text */
+    .flag-live{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 
-
-/* herosection Title */
-.hero-title{
-    font-family: 'Archivo', sans-serif;
-    font-size: 70px;
-    font-weight: bold;
-    color: white;
-}
-/* Hero section image */
-.hero-image img{
-    width: 100%;
-    margin-bottom: -4px;
-}
-/* Hero section regular text */
-.hero-regular{
-    padding-top: 30px;
-    padding-bottom: 50px;
-    font-size: 16px;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-/* Hero section button */
-.hero-button{
-    background-color: #DD0000;
+/* ======================= View All buttons==================== */
+.view-button{
+    background-color: #014b01;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -308,70 +335,108 @@ Footer Section
     padding: 15px 25px;
     border-radius: 10px;
 }
-/* Space for Icon */
-.fa-solid{
-    padding-left: 10px;
+
+
+
+
+
+    /* -----------------------------------------------------------
+For next page of (upcomming)
+-----------------------------------------------------------
+*/
+
+    /* For multiple section with text */
+    .flag-live{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    /* For single section */
+    .sub-sec-child{
+        justify-content: center;
+    }
+
 }
+
+
+/* ----------------------------------- Resposive for Tab
+================================================================ */
+
+@media (min-width: 770px) and (max-width: 992px){
+
+    /* hero-section view */
+    .hero-section{
+        margin: 40px;
+        padding: 50px 0 0px 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* herosection Title */
+.hero-title{
+    font-size: 40px;
 }
 
+/* ===================================================
+Second Live section
+========================================== */
 
+/* Top of the section */
+.container2{
+    flex-direction: column;
+    margin: 30px;
+}
 
-
-
-
-
-
-
-
-
-/* ++++++++++++++++++++++++++++++
-For next page (upcoming) 
-++++++++++++++++++++++++++++++++++*/
-
-/* upcoming match section */
-.flag-live{
+/* Three button */
+.multiple-button{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    text-align: center;
+    background-color: white;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+/* Buton directly */
+.direct-buttons{
+    border: 1px solid gray;
+    margin: 20px 20px 0px 20px;
+}
+
+/* Video live section  */
+.main-live{
+    margin-top: -50px;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+/* ==============================================
+Footer Section
+=============================================== */
 
-/* separate section of upcoming match */
-.sec-child{
-    align-self: center;
-    border: 1px solid rgba(128, 128, 128, 0.445);
-    padding: 20px;
-    border-radius: 10px;
+/* footer tags  */
+.six-tags{
+    display: block;
+
 }
+/* -----------------------------------------------------------
+For next page of (upcomming)
+-----------------------------------------------------------
+*/
 
-/* double flag image */
-.sub-sec-child{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* flag images separately */
-.sub-sec-child img{
-    width: 100%;
-}
-
-/* Flag text number one */
-.reg1-flag{
-    padding-top: 10px;
-    font-family: 'Archivo', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-/* Flag text number two */
-.reg2-flag{
-    padding-top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    /* For multiple section with text */
+    .flag-live{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        margin-top: -50px;
+    }
+    /* For single section */
+    .sub-sec-child{
+        justify-content: center;
+    }
 }
